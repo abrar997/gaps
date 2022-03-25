@@ -18,8 +18,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/products.css ">
+<!-- swiper -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<!-- style css -->
+  <link rel="stylesheet" href="css/products.css ">
 </head>
 
 <body>
@@ -108,8 +110,8 @@
                                     <a class="nav-link" href="#">اضف منتجك وابداعاتك
                                     </a>
                                 </li>
-<li><i class="far fa-lightbulb pr-4" onclick="light()" id="lampa"></i>
-</li>
+                                <li><i class="far fa-lightbulb pr-4" onclick="light()" id="lampa"></i>
+                                </li>
                         </div>
                         <!-- Collapsible content -->
 
@@ -198,7 +200,7 @@
 
                 </div> -->
 
-                <div class="tops mr-auto ml-4 mt-3 ">
+                <div class="tops mr-auto ml-4 mt-3 " id="drop">
                     <button class="btn dropdown-toggle mr-4" type="button" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">اختيار حسب</button>
 
@@ -381,142 +383,247 @@
             <div class="row">
 
                 <h2 class="mt-4">العروض المتوفرة حاليا </h2>
+                   
 
-                <!-- Card deck -->
-                <div class="card-deck mt-4 pt-4">
+<!-- Swiper -->
+    <div class="container">
+        <div class="row">
+            <!-- Swiper -->
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <!-- Card -->
+                        <div class="card">
 
-                    <!-- Card -->
-                    <div class="card mb-4 " id="card">
-
-                        <!--Card image-->
-                        <div class="view overlay">
-                            <img class="card-img-top" src="img/coffee.jpg" alt="Card image cap">
-                            <a href="#!">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-
-                        <!--Card content-->
-                        <div class="card-body">
-
-                            <!--Title-->
-                            <h4 class="card-title">جهاز تحضير قهوة</h4>
-                            <!--Text-->
-                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                            <button type="button" id="btn" class="btn btn-light-blue btn-md" onclick="more()">Read
-                                more</button>
-                            <div class="thread" id="text">
-                                <p>التخفيض على الجهاز 5% و عند اخذ قطعتين يكون التخفيظ 10 %</p>
-                                <div class="btn">اضف الى السلة</div>
-                              <i class="fas fa-times"  onclick="cloes()" style="display: block;"></i>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <!-- Card -->
-                    <!-- Card -->
-                    <div class="card mb-4" id="card1">
-
-                        <!--Card image-->
-                        <div class="view overlay">
-                            <img class="card-img-top" src="img/light.jpg" alt="Card image cap">
-                            <a href="#!">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
-
-                        <!--Card content-->
-                        <div class="card-body ">
-
-                            <!--Title-->
-                            <h4 class="card-title">الكتكوت المضيء</h4>
-                            <!--Text-->
-
-                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                            <button type="button" id="btn1" class="btn btn-light-blue btn-md" onclick="more1()">Read
-                                more</button>
-                            <div class="thread" id="text1">
-                                <p>التخفيض على الجهاز 5% و عند اخذ قطعتين يكون التخفيظ 10 %</p>
-                                <div class="btn">اضف الى السلة</div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- Card -->
-                    <!-- Card -->
-                    <div class="card mb-4" id="card2">
-
-                        <!--Card image-->
-                        <div class="view overlay">
-                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg"
+                            <!-- Card image -->
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
                                 alt="Card image cap">
-                            <a href="#!">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
 
-                        <!--Card content-->
-                        <div class="card-body">
+                            <!-- Card content -->
+                            <div class="card-body">
 
-                            <!--Title-->
-                            <h4 class="card-title">Card title</h4>
-                            <!--Text-->
-
-                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                            <button type="button" id="btn2" class="btn btn-light-blue btn-md" onclick="more2()">Read
-                                more</button>
-                            <div class="thread" id="text2">
-                                <p>التخفيض على الجهاز 5% و عند اخذ قطعتين يكون التخفيظ 10 %</p>
-                                <div class="btn">اضف الى السلة</div>
+                                <!-- Title -->
+                                <h4 class="card-title"><a>Card title</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <!-- Button -->
+                                <a href="#" class="btn btn-primary">Button</a>
 
                             </div>
-                        </div>
 
+                        </div>
+                        <!-- Card -->
                     </div>
-                    <!-- Card -->
+                    <div class="swiper-slide">
+                        <!-- Card -->
+                        <div class="card">
 
-                    <!-- Card -->
-                    <div class="card mb-4" id="card3">
+                            <!-- Card image -->
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
+                                alt="Card image cap">
 
-                        <!--Card image-->
-                        <div class="view overlay">
-                            <img class="card-img-top" src="img/tahoon.jpg" alt="Card image cap">
-                            <a href="#!">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                        </div>
+                            <!-- Card content -->
+                            <div class="card-body">
 
-                        <!--Card content-->
-                        <div class="card-body">
+                                <!-- Title -->
+                                <h4 class="card-title"><a>Card title</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <!-- Button -->
+                                <a href="#" class="btn btn-primary">Button</a>
 
-                            <!--Title-->
-                            <h4 class="card-title">Card title</h4>
-                            <button type="button" id="btn3" class="btn btn-light-blue btn-md" onclick="more3()">Read
-                                more</button>
-                            <div class="thread" id="text3">
-                                <p>التخفيض على الجهاز 5% و عند اخذ قطعتين يكون التخفيظ 10 %</p>
-                                <div class="btn">اضف الى السلة</div>
                             </div>
+
                         </div>
-
+                        <!-- Card -->
                     </div>
-                    <!-- Card -->
+                    <div class="swiper-slide">
+                        <!-- Card -->
+                        <div class="card">
 
-                    <!-- Card -->
+                            <!-- Card image -->
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
+                                alt="Card image cap">
 
+                            <!-- Card content -->
+                            <div class="card-body">
+
+                                <!-- Title -->
+                                <h4 class="card-title"><a>Card title</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <!-- Button -->
+                                <a href="#" class="btn btn-primary">Button</a>
+
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- Card -->
+                        <div class="card">
+
+                            <!-- Card image -->
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
+                                alt="Card image cap">
+
+                            <!-- Card content -->
+                            <div class="card-body">
+
+                                <!-- Title -->
+                                <h4 class="card-title"><a>Card title</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <!-- Button -->
+                                <a href="#" class="btn btn-primary">Button</a>
+
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- Card -->
+                        <div class="card">
+
+                            <!-- Card image -->
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
+                                alt="Card image cap">
+
+                            <!-- Card content -->
+                            <div class="card-body">
+
+                                <!-- Title -->
+                                <h4 class="card-title"><a>Card title</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <!-- Button -->
+                                <a href="#" class="btn btn-primary">Button</a>
+
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- Card -->
+                        <div class="card">
+
+                            <!-- Card image -->
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
+                                alt="Card image cap">
+
+                            <!-- Card content -->
+                            <div class="card-body">
+
+                                <!-- Title -->
+                                <h4 class="card-title"><a>Card title</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <!-- Button -->
+                                <a href="#" class="btn btn-primary">Button</a>
+
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- Card -->
+                        <div class="card">
+
+                            <!-- Card image -->
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
+                                alt="Card image cap">
+
+                            <!-- Card content -->
+                            <div class="card-body">
+
+                                <!-- Title -->
+                                <h4 class="card-title"><a>Card title</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <!-- Button -->
+                                <a href="#" class="btn btn-primary">Button</a>
+
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- Card -->
+                        <div class="card">
+
+                            <!-- Card image -->
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
+                                alt="Card image cap">
+
+                            <!-- Card content -->
+                            <div class="card-body">
+
+                                <!-- Title -->
+                                <h4 class="card-title"><a>Card title</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <!-- Button -->
+                                <a href="#" class="btn btn-primary">Button</a>
+
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- Card -->
+                        <div class="card">
+
+                            <!-- Card image -->
+                            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg"
+                                alt="Card image cap">
+
+                            <!-- Card content -->
+                            <div class="card-body">
+
+                                <!-- Title -->
+                                <h4 class="card-title"><a>Card title</a></h4>
+                                <!-- Text -->
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's
+                                    content.</p>
+                                <!-- Button -->
+                                <a href="#" class="btn btn-primary">Button</a>
+
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                    </div>
                 </div>
-                <!-- Card deck -->
-
-
+                <div class="swiper-pagination"></div>
             </div>
-
-
         </div>
+</div>
+    </div>
+</section>
 
-    </section>
     <!-- --------------------------------------------------end section two------------------------------------- -->
     <!--  ----------------------------------FOOTER ---------------------------------------------------------- -->
 
@@ -546,7 +653,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
+                    <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by
                         <a href=""> Abrar Muthanna Alrawi Team
                         </a>
                     </p>
@@ -559,6 +666,8 @@
 
     <!-- ---------------------------------------------------------------------------- -->
     <!-- End your project here-->
+    <!--swiper slides -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- jQuery -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
@@ -589,6 +698,7 @@
         }
     </script>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="js/الدخول.js"></script>
 </body>

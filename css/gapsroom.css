@@ -1,0 +1,487 @@
+
+html{  overflow-x: hidden;
+    scroll-padding-top: 7.5rem;
+    scroll-behavior: smooth;}
+
+body{font-family: 'Tajawal', sans-serif;
+  overflow-x: hidden;
+  }
+
+  header {background-color: #f4f5f7;}
+  .header11 .headerhead {
+  height:120px ;
+  } 
+
+  .headertop  {display: flex;
+  justify-content: space-around;
+  background-color: #f4f5f7;
+  width: 100%;
+  position: fixed;
+  z-index: 222;
+  top:0ox  }  
+
+
+  header form input {width:900px;
+  height: 30px;
+  font-size: 15px;
+  padding: 22px;
+  margin-top: 40px;
+  outline: none;
+  direction: rtl;
+  }
+
+  header form input:hover{outline: #ad914a ;
+  } 
+
+  header form .btn {background-color: #ad914a;
+  width: 5px;
+  height: 45px;
+
+  }        
+
+  header .container .row form .btn i {color: white;
+  font-size: 15px;      
+  }
+
+  header img {width: 80px;
+  height: 70px;
+
+  }           
+
+
+  .headertop .container .row  i {color: #ad914a;
+  font-size: 29px;
+  ;    
+  }     
+
+  .headeri a{
+  color: white;
+  font-size:25px;
+  z-index: 4;
+  }  
+
+
+
+  header .headernav {direction: rtl;
+  margin-top: 20px;
+  font-size: 25px;
+  margin: auto;}
+
+  header .headernav nav {box-shadow: none;
+  color: black;
+  direction: rtl ;}
+
+  header .headernav nav .collapse .navbar-nav .nav-item .nav-link {color: black;    
+  font-weight: 600px;
+  font-size: 18px;    
+  }
+  header .headernav nav .collapse .navbar-nav .nav-item .nav-link {direction: rtl;
+  padding: 10px;             
+
+  }
+
+  header .headernav nav .collapse .navbar-nav .nav-item .nav-link:hover{background-color: #ad914a;
+  color: white;                  
+  }             
+            
+  /* -----------------   to correct the mistake in web by position fixed in nav bar     ------------------------- */
+    .icon{height:300px}
+
+  /* --------------------------------------------------------- */
+
+
+/*-------------------------------------- section one -------------------- */
+
+.one .row{margin-top:190px;
+direction: rtl;
+
+}
+
+/* header */
+.one  .row h3 {
+    margin-bottom: 40px;
+    background-color:  #f4f5f7;;
+    padding: 12px;
+    }
+
+.one  .row h3 a {
+     font-size: 22px;
+     color:black;
+     direction: ltr;
+    float: right;
+    direction: rtl;
+
+  }
+
+.one  .row h3 a:hover{color:#ad914a
+}
+
+/* main div of labels  */
+.one .row .list {margin: auto;
+width:70px;
+padding-left: 300px;
+color:black;
+padding-top:100px
+} 
+
+/* pargrapgh */
+.one .row .list p{font-size: 29px;
+font-weight: 600;
+color:#ad914a;
+text-align: right;
+}
+
+/* input checkbox */
+.one .row .list input{direction: ltr;
+}
+
+/* label preper */
+.one .row .list label{font-size: 18px;
+color:#ad914a;
+}
+
+/* image  */
+.one  .row .image img {width:500px;
+height:600px}
+
+
+/* ---end section one  */
+
+
+
+
+/* ----section two products ------------- */
+
+.two .row {margin-top: 60px;
+}
+
+/* head */
+.two .row .h33  {
+padding-bottom: 40px;
+font-size: 28px;
+background-color:  #f4f5f7;;
+height: 50px;
+width: 100%;
+text-align: right;
+padding-right: 60px;
+
+
+}
+
+
+/* cards pf types  */
+
+.two .row .cards {display: flex;
+flex-flow: row wrap;
+justify-content: space-around;
+padding:39px 10% 0px 10%;;
+
+
+}
+
+/* card*/
+
+.two .row .cards > .card {width:250px;
+margin-top: 30px;
+border: 2px solid #ad914a;
+border-radius: 30%;
+text-align: center;
+height: 380px;
+}
+
+.two .row .cards > .card img{
+border-top: 1px solid #ad914a;
+width: 70%;
+margin: auto;
+border-bottom: none;
+border-radius: 40%;
+height: 170px;
+box-shadow: 4px 3px 4px rgb(116, 113, 113);
+}
+
+.two .row .cards  .card  .btn {border-radius: 20%;
+border: 1px solid #3d3b35;
+background-color:rgba(0, 0, 0, 0.788) !important;
+color: white;
+font-weight: 600;
+box-shadow: 2px 2px 2px  white;
+
+}
+
+/* pagination */
+.pagination ul{display: inline;
+list-style: none;
+margin: auto;
+padding-top: 60px;
+}
+
+.pagination ul li{display: inline;
+border: 1px solid #ad914a;
+margin: auto;
+padding: 12px;
+border-radius: 5px;
+box-sizing: border-box;
+margin-top: 100px;
+transition: 0.6s ease;
+font-weight: 600;
+}
+
+.pagination ul li:hover {background-color:  #ad914a;
+color: white;
+border: 2px solid white;
+cursor: pointer;
+
+}
+
+
+
+/* section for more offeres  */
+
+
+.moreproduct{margin: auto;}
+
+.swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-top: 300px;
+        padding-bottom: 100px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+
+
+/* -----------------end section one------------ */
+
+
+
+
+  footer {margin-top: 800px;
+  direction: rtl;
+  }
+  .site-footer
+  {
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+  }
+  .site-footer hr
+  {
+  border-top-color:#bbb;
+  opacity:0.5
+  }
+  .site-footer hr.small
+  {
+  margin:20px 0
+  }
+  .site-footer h6
+  {
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+  }
+  .site-footer a
+  {
+  color:#737373;
+  }
+  .site-footer a:hover
+  {
+  color:#3366cc;
+  text-decoration:none;
+  }
+  .footer-links
+  {
+  padding-left:0;
+  list-style:none
+  }
+  .footer-links li
+  {
+  display:block
+  }
+  .footer-links a
+  {
+  color:#737373
+  }
+  .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+  {
+  color:#3366cc;
+  text-decoration:none;
+  }
+  .footer-links.inline li
+  {
+  display:inline-block
+  }
+  .site-footer .social-icons
+  {
+  text-align:right
+  }
+  .site-footer .social-icons a
+  {
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+  }
+  .copyright-text
+  {
+  margin:0
+  }
+  @media (max-width:991px)
+  {
+  .site-footer [class^=col-]
+  {
+  margin-bottom:30px
+  }
+  }
+  @media (max-width:767px)
+  {
+  .site-footer
+  {
+  padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+  text-align:center
+  }
+  }
+  .social-icons
+  {
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+  }
+  .social-icons li
+  {
+  display:inline-block;
+  margin-bottom:4px
+  }
+  .social-icons li.title
+  {
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+  }
+  .social-icons {margin: auto;}
+
+  .social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:20px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+  }
+  .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+  {
+  color:white;
+
+  }
+  .social-icons.size-sm a
+  {
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+  }
+  .social-icons a.facebook:hover
+  {
+  background-color:#3b5998
+  }
+  .social-icons a.twitter:hover
+  {
+  background-color:#00aced
+  }
+  .social-icons a.linkedin:hover
+  {
+  background-color:#007bb6
+  }
+  .social-icons a.dribbble:hover
+  {
+  background-color:#ad914a
+  }
+  @media (max-width:767px)
+  {
+  .social-icons li.title
+  {
+  display:block;
+  margin-right:0;
+  font-weight:600
+  }
+  }
+
+  footer textarea {background-color: #f4f5f7;
+  border: 1px solid #ad914a;
+  margin-top: auto;
+  outline: none;
+  color: #ad914a;
+  font-size: 15px;
+  font-weight: 600;
+  }
+
+  footer .btn {
+  background-color:#ad914a;
+  color: white;
+  margin-top: 20px;
+  margin-top: 330px;
+  margin: auto;
+  padding: 20px;
+  clear: both;
+  }
+
+  footer  .btn:hover {background-color: rgba(29, 28, 28, 0.527);
+  color: white;
+  box-shadow: 3px 3px 10px white;
+
+  }
+
+  footer .container .row .left {display:flex;
+  flex-flow: column;
+  justify-content: space-around;
+  }
+
+  footer h6 {text-align: right;}
+
+  footer i{font-size: 25px;
+  color: #ad914a;
+  }
